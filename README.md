@@ -1,29 +1,25 @@
 # LogSimulator
 
-TODO: Write a gem description
+Handles log simulation via debug socket.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+1) Clone log_simulator to your local.
 
-    gem 'log_simulator'
+2) Open up Terminal and go to the log_simulator root folder.
 
-And then execute:
+3) Call the `gem build log_simulator.gemspec` line.
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install log_simulator
+4) Call the `gem install ./log_simulator-{version-number}.gem` line.
 
 ## Usage
 
-TODO: Write usage instructions here
+After installing the gem simply write 
 
-## Contributing
+`simulate` to the terminal.
 
-1. Fork it ( https://github.com/[my-github-username]/log_simulator/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+`simulate someLogFile` to simulate some log file.
+
+`simulate someLogFile -t 0.5` to simulate log file in half speed.
+
+`simulate -c someLogFile` to simulate log file fetched from Crashlytics.
